@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f8fa"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#b4541e"/>
+  <text x="80" y="250" font-family="Inter,Segoe UI,sans-serif" font-size="34" fill="#57534e">Jaco van der Laan</text>
+  <text x="80" y="340" font-family="Inter,Segoe UI,sans-serif" font-size="76" font-weight="700" fill="#1c1917">The other half.</text>
+  <text x="80" y="412" font-family="Inter,Segoe UI,sans-serif" font-size="30" fill="#57534e">Films, books, mental models, dance, opera.</text>
+  <text x="80" y="470" font-family="Inter,Segoe UI,sans-serif" font-size="30" font-weight="600" fill="#b88a1b">The taste is mine; the machinery is shared.</text>
+</svg>
