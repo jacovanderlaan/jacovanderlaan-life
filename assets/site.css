@@ -55,17 +55,16 @@ nav.site a:hover{color:var(--accent)}
   .hero-media.placeholder{aspect-ratio:16/9}
 }
 
-section{padding:44px 0 8px}
-/* Clear separation between consecutive sections: a real gap above the divider,
-   and generous space below it before the next heading — so a heading never
-   crowds the card row above it (worst when the last row is a single card and
-   the empty space pulls the eye straight to the next heading). */
-section + section{margin-top:40px;padding-top:44px;border-top:1px solid var(--line)}
-section h2{font-size:24px;margin:0 0 10px;letter-spacing:-.01em}
+section{padding:64px 0 16px}
+/* Clear separation between consecutive sections: generous space on both sides
+   of the divider so each group reads as its own block and a heading never
+   crowds the card row above it. */
+section + section{margin-top:64px;padding-top:64px;border-top:1px solid var(--line)}
+section h2{font-size:24px;margin:0 0 12px;letter-spacing:-.01em}
 section h2:first-child{margin-top:0}
-section p.sub{color:var(--ink-soft);margin:0 0 24px;max-width:70ch}
+section p.sub{color:var(--ink-soft);margin:0 0 30px;max-width:70ch}
 /* When a heading has no sub-line under it, give the grid its own top gap. */
-section h2 + .grid,section h2 + .card{margin-top:22px}
+section h2 + .grid,section h2 + .card{margin-top:28px}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);display:block;color:inherit}
