@@ -50,9 +50,15 @@ nav.site a:hover{color:var(--accent)}
   .hero-media.placeholder{aspect-ratio:16/9}
 }
 
-section{padding:40px 0}
+section{padding:34px 0}
+/* Extra breathing room between consecutive sections so a heading never
+   crowds the cards of the section above it. */
+section + section{padding-top:14px;margin-top:20px;border-top:1px solid var(--line)}
 section h2{font-size:24px;margin:0 0 8px;letter-spacing:-.01em}
-section p.sub{color:var(--ink-soft);margin:0 0 22px;max-width:70ch}
+section h2:first-child{margin-top:0}
+section p.sub{color:var(--ink-soft);margin:0 0 24px;max-width:70ch}
+/* When a heading has no sub-line under it, give the grid its own top gap. */
+section h2 + .grid,section h2 + .card{margin-top:20px}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);display:block;color:inherit}
