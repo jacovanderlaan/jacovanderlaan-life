@@ -1,21 +1,5 @@
-# life.jacovanderlaan.com — the content half of the jacovanderlaan family.
-# Public by design: discovery is the point. Same policy as the sister sites.
-
+# ⚠️ TESTFASE — indexering UIT tot life.jacovanderlaan.com live is.
+# Deze site draait tijdelijk op github.io om te testen/doorontwikkelen.
+# Bij go-live: vervang dit bestand door robots.txt.golive (crawlers weer welkom).
 User-agent: *
-Allow: /
-
-# AI crawlers welcome — being read and cited is reach, not a leak.
-User-agent: GPTBot
-Allow: /
-User-agent: ClaudeBot
-Allow: /
-User-agent: Claude-Web
-Allow: /
-User-agent: CCBot
-Allow: /
-User-agent: Google-Extended
-Allow: /
-User-agent: PerplexityBot
-Allow: /
-
-Sitemap: https://life.jacovanderlaan.com/sitemap.xml
+Disallow: /
