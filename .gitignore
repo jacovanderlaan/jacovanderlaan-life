@@ -1,0 +1,10 @@
+# Loose/unsorted image files staged in assets/ should NOT be auto-committed.
+# Only files explicitly wired into a page get added by name (git add assets/<name>).
+# This prevents accidental publishing of copyrighted or unsorted photos via
+# `git add -A` (which happened once with film posters).
+assets/*.tmp
+assets/_unsorted/
+# Camera-named files are working uploads until renamed to a page slot:
+assets/IMG_*.jpg
+assets/IMG_*.JPG
+assets/20??????_*.jpg
