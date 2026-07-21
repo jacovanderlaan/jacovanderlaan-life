@@ -81,6 +81,15 @@ section h2 + .grid,section h2 + .card,
 section .sub + .grid,section .sub + .card{margin-top:28px}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+
+/* Photo strip: a row of the author's own photos. Fills the row, crops to a
+   consistent tile, own captions optional. Used for festival / trip shots. */
+.photo-strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:26px}
+.photo-strip figure{margin:0}
+.photo-strip img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;box-shadow:var(--shadow);display:block}
+.photo-strip figcaption{font-size:13px;color:var(--ink-faint);margin-top:8px}
+.photo-strip img.missing{display:none}
+.photo-strip img.missing + figcaption{display:none}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);display:block;color:inherit}
 .card h3{margin:0 0 6px;font-size:17px;color:var(--ink)}
 .card p{margin:0;color:var(--ink-soft);font-size:15px}
