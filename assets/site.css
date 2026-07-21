@@ -74,6 +74,16 @@ section{padding:52px 0}
 section + section{border-top:1px solid var(--line);padding-top:56px}
 section h2{font-size:24px;margin:0;letter-spacing:-.01em}
 section > *:not(:first-child){margin-top:0}
+/* Vertical rhythm between stacked content sections. */
+main > section + section,
+body > section + section{margin-top:40px}
+/* A .note following a grid/card row inside the SAME section loses its top
+   margin to the "> *:not(:first-child){margin-top:0}" reset above, so it sits
+   glued to the cards -- e.g. "What the numbers say" on /stage/. Restore its
+   space (and keep consecutive notes spaced from each other). */
+section > .grid + .note,
+section > .card + .note,
+section > .note + .note{margin-top:28px}
 section h2 + .sub,section h2 + p.sub{margin-top:12px;margin-bottom:0;color:var(--ink-soft);max-width:70ch}
 section .sub{color:var(--ink-soft);max-width:70ch}
 /* space before the first card row / grid, whether or not a sub-line precedes it */
