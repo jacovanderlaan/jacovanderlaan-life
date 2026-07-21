@@ -17,11 +17,22 @@ a{color:var(--accent);text-decoration:none}
 a:hover{color:var(--accent-dk)}
 
 header.site{position:sticky;top:0;z-index:10;background:rgba(247,248,250,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:20px}
 .brand{font-weight:700;font-size:18px;color:var(--ink);white-space:nowrap;flex-shrink:0}
 .brand span{color:var(--accent)}
-nav.site a{color:var(--ink-soft);margin-left:22px;font-size:15px;font-weight:500}
+.brand a{color:inherit}
+nav.site{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:6px 18px;row-gap:4px}
+nav.site a{color:var(--ink-soft);font-size:15px;font-weight:500;white-space:nowrap}
 nav.site a:hover{color:var(--accent)}
+nav.site a.active{color:var(--ink);font-weight:600;border-bottom:2px solid var(--accent);padding-bottom:2px}
+/* Systems links to another property, not a section here — set it apart. */
+nav.site a.nav-sys{margin-left:6px;padding-left:18px;border-left:1px solid var(--line);color:var(--ink-faint)}
+nav.site a.nav-sys:hover{color:var(--accent)}
+@media(max-width:820px){
+  header.site .wrap{height:auto;flex-direction:column;align-items:flex-start;gap:10px;padding-top:12px;padding-bottom:12px}
+  nav.site{justify-content:flex-start}
+  nav.site a.nav-sys{margin-left:0;padding-left:0;border-left:0}
+}
 
 .hero{padding:72px 0 40px}
 .hero h1{font-size:clamp(30px,5vw,46px);line-height:1.15;margin:0 0 14px;letter-spacing:-.02em}
